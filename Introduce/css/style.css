@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.introduce{
+    text-align: center;
+    display: block;
+}
+.introduce h1{
+    text-align: center;
+    padding-top: 20px;
+}
+ .introduce .intro-boder{
+    background-color: rgb(233, 228, 221);
+    width: 450px;
+    height: 620px;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    margin: 80px;
+    box-shadow: 5px 5px 3px #aaaaaa
+}
+.intro-boder:hover{
+    padding: 10px;
+}
+.introduce .intro-image{
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    width: 220px;
+    height: 220px;
+    background-color: rgb(199, 195, 177);
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px #aaaaaa
+}
+ .intro-image img{
+    position: absolute;
+    left: 20px;
+    bottom: 3px;
+    width: 180px;
+    border-radius: 0 0 38% 38%;
+}
+.intro-boder .intro-conten{
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+.intro-conten .name {
+    font-weight: bold;
+    font-size: 20px;
+}
+.intro-conten div{
+    font-weight: bold;
+    padding: 20px 0 40px 0;
+
+}
+.intro-note{
+    width: 110px;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    bottom: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border:1px solid tan;
+    border-radius: 10px;
+}
+.modal{
+    position: relative;
+    background-color: rgb(199, 175, 141);
+    width: 800px;
+    height: 350px;
+    border-radius: 20px;
+}
+.modal .modal-close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 10px;
+    background-color: rgb(184, 47, 47);
+    cursor: pointer;
+    border-radius: 50%;
+}
+.modal .modal-header{
+    font-size: 26px;
+    padding-top: 20px;
+    text-align: center;
+}
+.modal-body{
+    width: 500px;
+    text-align: left;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    font-size: 20px;
+    line-height: 25px;
+}

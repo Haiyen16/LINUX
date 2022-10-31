@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Introduce Team-5</title>
+</head>
+<body>
+    <div class="introduce"> 
+        <H1>Giới Thiệu</H1>
+        
+        <div class="intro-boder">
+            <div class="intro-image">
+                <img src="./image_intro/309490989_535946761694350_3857511874074838439_n-removebg-preview.png" alt="">
+            </div>
+            <div class="intro-conten">
+                <p class="name">PHẠM THỊ THỦY</p>
+                <div>CHUYÊN VIÊN DATA ANALYST</div>
+                <i>Là một chuyên viên có kiến thức thuộc top đầu của công ty. Với sự ham học hỏi và tìm tòi thì Phạm Thủy thành thạo  các công cụ thu thập, xử lý dữ liệu (SQL, Excel, Pandas…) và trực quan hoá dữ liệu (BI, Tableau, Matplotlib …). </i>
+            </div>
+            <div>
+                <button class="intro-note js-intro-note">Xem chi tiết</button>
+            </div>
+        </div>
+        <div class="intro-boder">
+            <div class="intro-image">
+                <img src="./image_intro/312905137_1776436719401384_6789602747906520641_n-removebg-preview.png" alt="">
+            </div>
+            <div class="intro-conten">
+                <p class="name">NGÔ NGUYỄN KHẮC MINH</p>
+                <div>CHUYÊN VIÊN DEVELOPER</div>
+                <i>Là chuyên viên có kiến thức về chuyên môn lập trình rất tốt, biết được rất nhiều ngôn ngữ lập trình khác nhau: PHP,Python, Ruby,...</i>
+            </div>
+            <div>
+                <button class="intro-note js-intro-note">Xem chi tiết</button>
+            </div>
+
+        </div>
+        <div class="intro-boder">
+            <div class="intro-image">
+                <img src="./image_intro/311412306_635209918279245_1921136090329721088_n-removebg-preview (1).png" alt="">
+            </div>
+            <div class="intro-conten">
+                <p class="name">NGUYỄN THỊ HẢI YẾN</p>
+                <div>CHUYÊN VIÊN TESTER</div>
+                <i>Là một chuyên viên kiểm thử phầm mềm đầy tiềm năng, có sức sáng tạo, sự hiểu biết rộng và thành thạo các công cụ có sẵn.  </i>
+            </div>
+            <div>
+                <button class="intro-note js-intro-note">Xem chi tiết</button>
+            </div>
+
+        </div>
+        <div class="intro-boder">
+            <div class="intro-image">
+                <img src="./image_intro/312905137_1776436719401384_6789602747906520641_n-removebg-preview.png" alt="">
+            </div>
+            <div class="intro-conten">
+                <p class="name">LÊ ĐÌNH TRƯỜNG</p>
+                <div>KỸ SƯ IT</div>
+                <i>Là một kỹ sư IT có kiến thức chuyên sâu về ngành công nghệ thông tin, thành thạo các thiết bị phần cứng, thiết bị số thì kỹ năng lập trình, quản lý thông tin và mạng máy tính, thậm chí là thiết kế hoặc phát triển hệ thống phần mềm.</i>
+            </div>
+            <div>
+                <button class="intro-note js-intro-note">Xem chi tiết</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <header class="modal-header">
+                <i class="fas fa-user"> Thông tin cá nhân </i>
+            </header>
+            <div class="modal-body">
+                <p class="name">LÊ ĐÌNH TRƯỜNG</p>
+            <div>KỸ SƯ IT</div>
+            <i>Là một kỹ sư IT có kiến thức chuyên sâu về ngành công nghệ thông tin, thành thạo các thiết bị phần cứng, thiết bị số thì kỹ năng lập trình, quản lý thông tin và mạng máy tính, thậm chí là thiết kế hoặc phát triển hệ thống phần mềm.</i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const noteBtns =document.querySelectorAll('.js-intro-note')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        // hàm hiển thị 
+        function showIntroNote(){
+            modal.classList.add('open')
+        }
+        //hàm ẩn 
+        function hideIntroNote(){
+            modal.classList.remove('open')
+        }
+        // Lặp qua từng thẻ button và nghe hành vi click
+        for( const noteBnt of noteBtns) {
+            noteBnt.addEventListener('click',showIntroNote )
+        }
+        //nghe hành vi của click vào button close
+        modalClose.addEventListener('click',hideIntroNote)
+
+        modal.addEventListener('click',hideIntroNote )
+        modalContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+        
+    </script>
+    
+    
+</body>
+</html>
